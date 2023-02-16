@@ -60,13 +60,22 @@ public class InfoRep1 extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
         txtIntCoText = new javax.swing.JTextArea();
+        pnlOvrQuest = new javax.swing.JPanel();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
         lblch1chapno = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 0, 204));
 
         jButton1.setBackground(new java.awt.Color(204, 0, 0));
-        jButton1.setText("jButton1");
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Back");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         lblCh1ttl.setFont(new java.awt.Font("Jokerman", 0, 18)); // NOI18N
         lblCh1ttl.setText("Information Representation");
@@ -92,7 +101,7 @@ public class InfoRep1 extends javax.swing.JFrame {
         pnlImgsLayout.setVerticalGroup(
             pnlImgsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlImgsLayout.createSequentialGroup()
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -117,7 +126,7 @@ public class InfoRep1 extends javax.swing.JFrame {
         pnlSoundLayout.setVerticalGroup(
             pnlSoundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlSoundLayout.createSequentialGroup()
-                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -160,7 +169,7 @@ public class InfoRep1 extends javax.swing.JFrame {
         pnlCompTechLayout.setVerticalGroup(
             pnlCompTechLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlCompTechLayout.createSequentialGroup()
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -200,7 +209,7 @@ public class InfoRep1 extends javax.swing.JFrame {
         );
         pnl9FebLayout.setVerticalGroup(
             pnl9FebLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
+            .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
         );
 
         pnlQandRevDate.addTab("09 - 02", pnl9Feb);
@@ -242,7 +251,7 @@ public class InfoRep1 extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 196, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -266,7 +275,7 @@ public class InfoRep1 extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 196, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -290,7 +299,7 @@ public class InfoRep1 extends javax.swing.JFrame {
         pnlIntCoNoLayout.setVerticalGroup(
             pnlIntCoNoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlIntCoNoLayout.createSequentialGroup()
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 196, Short.MAX_VALUE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -315,13 +324,38 @@ public class InfoRep1 extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 196, Short.MAX_VALUE)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         tbpndatrep.addTab("internal coding of text", jPanel3);
 
         tbpnsect.addTab("Data Representation", tbpndatrep);
+
+        pnlOvrQuest.setBackground(new java.awt.Color(0, 255, 0));
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jScrollPane9.setViewportView(jTextArea2);
+
+        javax.swing.GroupLayout pnlOvrQuestLayout = new javax.swing.GroupLayout(pnlOvrQuest);
+        pnlOvrQuest.setLayout(pnlOvrQuestLayout);
+        pnlOvrQuestLayout.setHorizontalGroup(
+            pnlOvrQuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlOvrQuestLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 753, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        pnlOvrQuestLayout.setVerticalGroup(
+            pnlOvrQuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlOvrQuestLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 251, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        tbpnsect.addTab("Questions", pnlOvrQuest);
 
         lblch1chapno.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
         lblch1chapno.setText("Chapter 1");
@@ -361,6 +395,12 @@ public class InfoRep1 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    HomeScreen main = new HomeScreen();
+        main.setVisible(true);
+        this.setVisible(false);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -410,7 +450,9 @@ public class InfoRep1 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     private javax.swing.JLabel lblCh1ttl;
     private javax.swing.JLabel lblch1chapno;
     private javax.swing.JPanel pnl9Feb;
@@ -419,6 +461,7 @@ public class InfoRep1 extends javax.swing.JFrame {
     private javax.swing.JPanel pnlImgs;
     private javax.swing.JPanel pnlIntCoNo;
     private javax.swing.JPanel pnlMulMed;
+    private javax.swing.JPanel pnlOvrQuest;
     private javax.swing.JPanel pnlQandRev;
     private javax.swing.JTabbedPane pnlQandRevDate;
     private javax.swing.JPanel pnlSound;
