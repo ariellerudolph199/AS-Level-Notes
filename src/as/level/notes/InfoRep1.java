@@ -29,19 +29,6 @@ public class InfoRep1 extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         lblCh1ttl = new javax.swing.JLabel();
         tbpnsect = new javax.swing.JTabbedPane();
-        tbpndatrep = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtnumsys = new javax.swing.JTextArea();
-        jPanel2 = new javax.swing.JPanel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        txtnoq = new javax.swing.JTextArea();
-        pnlIntCoNo = new javax.swing.JPanel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        txtInCoNo = new javax.swing.JTextArea();
-        jPanel3 = new javax.swing.JPanel();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        txtIntCoText = new javax.swing.JTextArea();
         pnlMulMed = new javax.swing.JPanel();
         tbpnMulMed = new javax.swing.JTabbedPane();
         pnlImgs = new javax.swing.JPanel();
@@ -60,6 +47,19 @@ public class InfoRep1 extends javax.swing.JFrame {
         pnl9Feb = new javax.swing.JPanel();
         jScrollPane7 = new javax.swing.JScrollPane();
         txt9Feb = new javax.swing.JTextArea();
+        tbpndatrep = new javax.swing.JTabbedPane();
+        jPanel1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtnumsys = new javax.swing.JTextArea();
+        jPanel2 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        txtnoq = new javax.swing.JTextArea();
+        pnlIntCoNo = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        txtInCoNo = new javax.swing.JTextArea();
+        jPanel3 = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        txtIntCoText = new javax.swing.JTextArea();
         lblch1chapno = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -70,103 +70,6 @@ public class InfoRep1 extends javax.swing.JFrame {
 
         lblCh1ttl.setFont(new java.awt.Font("Jokerman", 0, 18)); // NOI18N
         lblCh1ttl.setText("Information Representation");
-
-        jPanel1.setBackground(new java.awt.Color(204, 0, 153));
-
-        txtnumsys.setColumns(20);
-        txtnumsys.setRows(5);
-        txtnumsys.setText("denary numbers - also known as decimal numbers, are written using one of the symbols 0 - 9 for each denary digit.\nbit - a digit in the binary number system written using either of the symbols: 0 or 1\nbyte - a group of 8 bits treated as a single unit\nnibble - group of 4 bits treated as a single unit\n");
-        jScrollPane1.setViewportView(txtnumsys);
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 827, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        tbpndatrep.addTab("number systems", jPanel1);
-
-        jPanel2.setBackground(new java.awt.Color(204, 0, 153));
-
-        txtnoq.setColumns(20);
-        txtnoq.setRows(5);
-        jScrollPane2.setViewportView(txtnoq);
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 827, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        tbpndatrep.addTab("numbers & questions", jPanel2);
-
-        pnlIntCoNo.setBackground(new java.awt.Color(204, 0, 204));
-
-        txtInCoNo.setColumns(20);
-        txtInCoNo.setRows(5);
-        jScrollPane3.setViewportView(txtInCoNo);
-
-        javax.swing.GroupLayout pnlIntCoNoLayout = new javax.swing.GroupLayout(pnlIntCoNo);
-        pnlIntCoNo.setLayout(pnlIntCoNoLayout);
-        pnlIntCoNoLayout.setHorizontalGroup(
-            pnlIntCoNoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlIntCoNoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 821, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        pnlIntCoNoLayout.setVerticalGroup(
-            pnlIntCoNoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlIntCoNoLayout.createSequentialGroup()
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        tbpndatrep.addTab("internal coding of numbers", pnlIntCoNo);
-
-        jPanel3.setBackground(new java.awt.Color(204, 0, 204));
-
-        txtIntCoText.setColumns(20);
-        txtIntCoText.setRows(5);
-        jScrollPane4.setViewportView(txtIntCoText);
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 821, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        tbpndatrep.addTab("internal coding of text", jPanel3);
-
-        tbpnsect.addTab("Data Representation", tbpndatrep);
 
         pnlMulMed.setBackground(new java.awt.Color(102, 102, 255));
 
@@ -183,13 +86,13 @@ public class InfoRep1 extends javax.swing.JFrame {
             pnlImgsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlImgsLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 815, Short.MAX_VALUE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 747, Short.MAX_VALUE)
                 .addContainerGap())
         );
         pnlImgsLayout.setVerticalGroup(
             pnlImgsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlImgsLayout.createSequentialGroup()
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 234, Short.MAX_VALUE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -199,6 +102,7 @@ public class InfoRep1 extends javax.swing.JFrame {
 
         txtSound.setColumns(20);
         txtSound.setRows(5);
+        txtSound.setText("* Sound - variations of pressure detected by the human ear\n* to store sound electronically the original analog sound signal has to be converted\n\t* Steps to converting sound\n\t1 apply band-limiting filter\n\t2 put into analog-to-digital converter\n* band limiter - removes the frequencies that a human ear cannot detect and could cause problems in the coding if not removed\nSampling - taking measurements at regular intervals and storing the value\nSampling resolution - the number of bits used to store each sample \nSampling rate -the number of samples taken per second.\nanalogue data -data obtained by measurement of physical property \ndigital data - data that has been stored as a binary value which can be one of a discrete range of values");
         jScrollPane8.setViewportView(txtSound);
 
         javax.swing.GroupLayout pnlSoundLayout = new javax.swing.GroupLayout(pnlSound);
@@ -207,13 +111,13 @@ public class InfoRep1 extends javax.swing.JFrame {
             pnlSoundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlSoundLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 815, Short.MAX_VALUE)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 747, Short.MAX_VALUE)
                 .addContainerGap())
         );
         pnlSoundLayout.setVerticalGroup(
             pnlSoundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlSoundLayout.createSequentialGroup()
-                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 234, Short.MAX_VALUE)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -250,13 +154,13 @@ public class InfoRep1 extends javax.swing.JFrame {
         pnlCompTechLayout.setHorizontalGroup(
             pnlCompTechLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlCompTechLayout.createSequentialGroup()
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 815, Short.MAX_VALUE)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 747, Short.MAX_VALUE)
                 .addContainerGap())
         );
         pnlCompTechLayout.setVerticalGroup(
             pnlCompTechLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlCompTechLayout.createSequentialGroup()
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 234, Short.MAX_VALUE)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -291,12 +195,12 @@ public class InfoRep1 extends javax.swing.JFrame {
         pnl9FebLayout.setHorizontalGroup(
             pnl9FebLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl9FebLayout.createSequentialGroup()
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 811, Short.MAX_VALUE)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 743, Short.MAX_VALUE)
                 .addContainerGap())
         );
         pnl9FebLayout.setVerticalGroup(
             pnl9FebLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+            .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
         );
 
         pnlQandRevDate.addTab("09 - 02", pnl9Feb);
@@ -320,6 +224,105 @@ public class InfoRep1 extends javax.swing.JFrame {
 
         tbpnsect.addTab("Questions & revision", pnlQandRev);
 
+        jPanel1.setBackground(new java.awt.Color(204, 0, 153));
+
+        txtnumsys.setColumns(20);
+        txtnumsys.setRows(5);
+        txtnumsys.setText("denary numbers - also known as decimal numbers, are written using one of the symbols 0 - 9 for each denary digit.\nbit - a digit in the binary number system written using either of the symbols: 0 or 1\nbyte - a group of 8 bits treated as a single unit\nnibble - group of 4 bits treated as a single unit\n");
+        jScrollPane1.setViewportView(txtnumsys);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 759, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 196, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        tbpndatrep.addTab("number systems", jPanel1);
+
+        jPanel2.setBackground(new java.awt.Color(204, 0, 153));
+
+        txtnoq.setColumns(20);
+        txtnoq.setRows(5);
+        txtnoq.setText("decimal prefix- a prefix to define the magnitude of a value. Examples are kilo, mega and tera representing 10 to the power of 3, 6, 9, and 12 respectively\nBinary prefix - A prefix to define the magnitude of a value. Examples are kibi, mebi, gibi and tebi representing factors of 2 to the power of 10, 20, 30 and 40\n\trespectively.");
+        jScrollPane2.setViewportView(txtnoq);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 759, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 196, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        tbpndatrep.addTab("numbers & quantities", jPanel2);
+
+        pnlIntCoNo.setBackground(new java.awt.Color(204, 0, 204));
+
+        txtInCoNo.setColumns(20);
+        txtInCoNo.setRows(5);
+        jScrollPane3.setViewportView(txtInCoNo);
+
+        javax.swing.GroupLayout pnlIntCoNoLayout = new javax.swing.GroupLayout(pnlIntCoNo);
+        pnlIntCoNo.setLayout(pnlIntCoNoLayout);
+        pnlIntCoNoLayout.setHorizontalGroup(
+            pnlIntCoNoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlIntCoNoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 753, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        pnlIntCoNoLayout.setVerticalGroup(
+            pnlIntCoNoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlIntCoNoLayout.createSequentialGroup()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 196, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        tbpndatrep.addTab("internal coding of numbers", pnlIntCoNo);
+
+        jPanel3.setBackground(new java.awt.Color(204, 0, 204));
+
+        txtIntCoText.setColumns(20);
+        txtIntCoText.setRows(5);
+        txtIntCoText.setText("ASCII - Stands for American Standard Code for Information Interchange;\n\t- it is made up of 7 bits\n\t- each character is made of 7 bits meaning that there are 128\nUnicode - Created as ASCII did not cover all the characters needed\n\t- each character is made of 11 bits meaning that the maximum value is 2048 meaning it consists of 2048 characters");
+        jScrollPane4.setViewportView(txtIntCoText);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 753, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 196, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        tbpndatrep.addTab("internal coding of text", jPanel3);
+
+        tbpnsect.addTab("Data Representation", tbpndatrep);
+
         lblch1chapno.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
         lblch1chapno.setText("Chapter 1");
 
@@ -338,8 +341,9 @@ public class InfoRep1 extends javax.swing.JFrame {
                 .addComponent(lblCh1ttl)
                 .addGap(287, 287, 287))
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(tbpnsect)
-                .addContainerGap())
+                .addGap(68, 68, 68))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -350,7 +354,7 @@ public class InfoRep1 extends javax.swing.JFrame {
                     .addComponent(lblch1chapno))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblCh1ttl, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(140, 140, 140)
                 .addComponent(tbpnsect)
                 .addContainerGap())
         );
